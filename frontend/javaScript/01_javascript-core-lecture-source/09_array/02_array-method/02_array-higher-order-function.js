@@ -74,3 +74,25 @@ console.log(`result: ${result}`);
 // 배열 내 모든 요소가 0보다 큰지 확인
 result = [1,5,3,2,4].every(item => item > 0);
 console.log(`result: ${result}`);
+
+// Array.prototype.find : 배열을 순회하며 각 요소에 대하여 인자로 주어진 콜백함수를 실행하여
+// 그 결과가 참인 첫 번째 요소를 반환한다. 참인 요소가 존재하지 않는다면 undefined 를 반환한다
+// Array.prototype.findIndex : 배열을 순회하며 각 요소에 대하여 인자로 주어진 콜백함수를 실행하여
+// 그 결과가 참인 첫 번째 인덱스를 반환한다. 참인 요소가 존재하지 않는다면 -1을 반환한다
+const students = [
+    {name : '유관순', score : 90},
+    {name : '홍길동', score : 80},
+    {name : '장보고', score : 70}
+];
+
+// 이름이 홍길동인 학생 찾기
+result = students.find(item => item.name === '홍길동');
+console.log('result: ', result);
+result = students.findIndex(item => item.name === '홍길동');
+console.log('result: ', result);
+
+// 만약 80점 이상인 학생들을 찾고 싶다면? find 말고 filter로 처리
+result = students.filter(item => item.score >= 80);
+console.log('result: ', result);
+
+
