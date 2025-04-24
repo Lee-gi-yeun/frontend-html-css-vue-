@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>마우스 이벤트</h1>
+<button>클릭</button>
+<script>
+  const $btn = document.querySelector('button');
+  $btn.addEventListener('mousedown', e => {
+    // event.button -> 0 : 왼클릭, 1 : 휠클릭, 2 : 우클릭
+    console.log(`mousedown button=${e.button}`);
+  });
+  $btn.addEventListener('mouseup', e => {
+    console.log(`mouseup button=${e.button}`);
+  });
+  $btn.addEventListener('mouseover', e => {
+    console.log(`mouseover button=${e.button}`);
+  });
+  $btn.addEventListener('mouseout', e => {
+    console.log(`mouseout button=${e.button}`);
+  });
+  $btn.addEventListener('click', e => {
+    console.log(`click button=${e.button}`);
+  });
+  $btn.addEventListener('dblclick', e => {
+    console.log(`dblclick button=${e.button}`);
+  });
+  $btn.addEventListener('contextmenu', e => {
+    e.preventDefault();
+    console.log(`contextmenu button=${e.button}`);
+  });
+
+
+</script>
+</body>
+</html>
