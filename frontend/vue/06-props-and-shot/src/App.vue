@@ -8,6 +8,7 @@ import MyComponent from "@/components/00_Components/MyComponent.vue";
 import PropsParent from "@/components/01_props/PropsParent.vue";
 import DrillingParent from "@/components/02_props-drilling/DrillingParent.vue";
 import SlotParent from "@/components/03_slot/SlotParent.vue";
+import ScopedSlotParent from "@/components/04_scoped-slot/ScopedSlotParent.vue";
 </script>
 <!--
  사용자 화면에 보여지는 부분을 내보낼 때 작성하며 다른 엘리먼트 요소를 감싸주는 역할을 수행한다.
@@ -25,6 +26,8 @@ import SlotParent from "@/components/03_slot/SlotParent.vue";
     <DrillingParent/>
     <h3>03. Slot</h3>
     <SlotParent/>
+    <h3>04. Scoped Slot</h3>
+    <ScopedSlotParent/>
   </main>
 </template>
 <!--
