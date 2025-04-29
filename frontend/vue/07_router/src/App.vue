@@ -13,9 +13,9 @@
       클릭 시 to 속성의 URL 로 라우팅 된다.
       -->
 <!--      <nav>
-        <RouterLink to="/" active-class="active">Home</RouterLink>
-        <RouterLink to="/pathvariable/1" active-class="active">PathVariable</RouterLink>
-        <RouterLink to="/querystring?name=홍길동&age=20" active-class="active">QueryString</RouterLink>
+        <RouterLink to="/" active-class="active" replace>Home</RouterLink>
+        <RouterLink to="/pathvariable/1" active-class="active" replace>PathVariable</RouterLink>
+        <RouterLink to="/querystring?name=홍길동&age=20" active-class="active" replace>QueryString</RouterLink>
       </nav>-->
       <h2>Nested Router</h2>
       <nav>
