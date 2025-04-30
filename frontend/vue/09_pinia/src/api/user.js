@@ -20,3 +20,13 @@ export function logoutUser() {
 export function refreshUserToken(){
     return api.post(`/auth/refresh`);
 }
+
+// 5. 유저 목록 조회
+export function getUsers(){
+    return api.get(`/admin/users`);
+}
+
+// 6. 내 정보 조회
+export function getUserDetail() {
+    return api.get(`/users/me`);
+}
